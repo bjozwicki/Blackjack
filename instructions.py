@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+
+instructions = """
+Blackjack is the American variant of a globally popular banking game known as Twenty-One.
+It is a comparing card game between one or more players and a dealer,
+where each player in turn competes against the dealer. 
+Players do not compete against each other.
+
+The objective of the game is to beat the dealer in one of the following ways:
+- Get 21 points on the player's first 2 cards (called a blackjack or natural), without a dealer blackjack;
+- Reach a final score higher than the dealer without exceeding 21; or
+- Let the dealer draw additional cards until their hand exceeds 21 (busted).
+
+The cards are valued as follows:
+- Ace can count as either 1 or 11.
+- 2 through 9 are valued at their face value;
+- 10, Jack, Queen, and King are all valued at 10.
+
+On their turn, players must choose whether to:
+- "hit" (take a card),
+- "stand" (end their turn),
+- "double" (double wager, take a single card and finish),
+- "split" (if the two cards have the same value, separate them to make two hands),
+- or "surrender" (give up a half-bet and retire from the game)
+
+After all boxes have finished playing, the dealer's hand is resolved by drawing cards until the hand busts
+or achieves a value of 17 or higher (a dealer total of 17 including an ace valued as 11, also known as a "soft 17",
+must be drawn to in some games and must stand in others).
+The dealer never doubles, splits, or surrenders.
+If the dealer busts, all remaining player hands win.
+If the dealer does not bust, each remaining bet wins if its hand is higher than the dealer's, and loses if it is lower.
+"""
+# TODO: Wrzuc to do txt czy cus
