@@ -1,1 +1,1 @@
-Readme file for github learning
+Blackjack game to play in console. No GUI planned.
