@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-instructions = """
 Blackjack is the American variant of a globally popular banking game known as Twenty-One.
 It is a comparing card game between one or more players and a dealer,
 where each player in turn competes against the dealer. 
@@ -29,5 +26,3 @@ must be drawn to in some games and must stand in others).
 The dealer never doubles, splits, or surrenders.
 If the dealer busts, all remaining player hands win.
 If the dealer does not bust, each remaining bet wins if its hand is higher than the dealer's, and loses if it is lower.
-"""
-# TODO: Wrzuc to do txt czy cus
