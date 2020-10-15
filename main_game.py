@@ -1,13 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# TODO: Add human player options
-# TODO: Add skeleton options for 4 and 5th move (ins./surrender)
-# TODO: Add random/semi-random/standard strategy ai (as difficulty options)
-# TODO: Add betting and payouts
-# TODO: Add catalog structure
-# TODO: List Adrian's comments here
-# TODO: rewrite win function into separate functions, one setting win_prio, other comparing results of dealer and player
-
 
 import assets
 from classes import Player, Dealer
@@ -57,7 +49,7 @@ def winner(player, dealer):
         print "Player got more points than dealer. Player won."
         return "player"
 
-# Wydziel sobie funkcje
+
 def game():
     """Main function, generates a game of blackjack."""
 
@@ -103,7 +95,7 @@ def game():
     while dealer.total < 17:
         dealer.hit(deck)
 
-    # TODO: funkcja renderująca menu/elementy menu
+
     """3rd stage, calculating and displaying results"""
     print "\n" + "_" * 25 + "RESULTS:" + "_" * 25
     player_1.display_hand()
