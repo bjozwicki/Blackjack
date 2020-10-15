@@ -16,7 +16,7 @@ while True:  # Always rebound to the menu
         main_game.game()
     elif entry == "2":
         instructions = open("instructions.txt", "r")
-        print instructions
+        print instructions.read()
     elif entry.upper() == "Q":
         print "Thank you for playing!"
         quit()
