@@ -1,3 +1,5 @@
+TODO: create correct references in files after creating catalog structure
+
 Punktowanie wygranych:
 
     def winner_codition(player):
@@ -26,3 +28,23 @@ TODO:
     Create function rendering menu in text format
     main_game -> exiting to main menu from current game (2 errors)
 """
+
+Catalog structure:
+    0 Main catalog
+        Blackjack.py
+        .git
+        .gitignore
+        Readme.txt
+
+        1 main
+            main_game.py
+
+        2 classes
+            classes.py
+
+        3 assets
+            Assets.py
+            Instructions.txt
+
+        4 dev
+            Sketch.py
