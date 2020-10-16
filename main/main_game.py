@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
 
-import assets
-from classes import Player, Dealer
+from assets import assets
+from classes.classes import Player, Dealer
+
 from functools import partial 
 from random import randint
 

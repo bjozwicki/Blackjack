@@ -1,4 +1,4 @@
-TODO: create correct references in files after creating catalog structure
+
 
 Punktowanie wygranych:
 
@@ -22,7 +22,6 @@ TODO:
     Add skeleton options for 4 and 5th move (ins./surrender)
     Add random/semi-random/standard strategy ai (as difficulty options)
     Add betting and payouts
-    Add catalog structure
     Rewrite win function into separate functions, one setting win_prio, other comparing results of dealer and player
     Separate functions in main_game -> game()
     Create function rendering menu in text format

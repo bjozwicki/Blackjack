@@ -2,7 +2,7 @@
 
 # Blackjack
 
-import main_game
+from main import main_game
 
 
 print "Welcome to the game of blackjack!"
@@ -15,8 +15,8 @@ while True:  # Always rebound to the menu
     if entry == "1":
         main_game.game()
     elif entry == "2":
-        instructions = open("instructions.txt", "r")
-        print instructions.read()
+        with open("assets/instructions.txt", "r") as instructions:
+            print instructions.read()
     elif entry.upper() == "Q":
         print "Thank you for playing!"
         quit()

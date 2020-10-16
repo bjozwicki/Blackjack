@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import assets
+from assets import assets
 from random import randint
 
 
