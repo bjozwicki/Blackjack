@@ -1,5 +1,8 @@
 
 
+>Check inf string formatting in classes.py
+
+
 Punktowanie wygranych:
 
     def winner_codition(player):
@@ -18,6 +21,7 @@ Punktowanie wygranych:
 
 """
 TODO:
+    Try break() function instead of exit() in main_game
     Add human player options
     Add skeleton options for 4 and 5th move (ins./surrender)
     Add random/semi-random/standard strategy ai (as difficulty options)

@@ -46,17 +46,17 @@ class Participant(object):
 
     def display_hand(self):
         """Displays participant's info in a console: hand, card values, total points."""
-        print "< %s >" % self.name
+        print("< %s >" % self.name)
 
-        print "HAND:",
+        print("HAND:"),
         for card in self.hand:
-            print "%3s%s" % (card[0], card[1]),
+            print("%3s%s" % (card[0], card[1])),
 
-        print "\nPTS: ",
+        print("\nPTS: "),
         for point in self.points:
-            print "%4d" % point,
+            print("%4d" % point),
 
-        print "\nTOTAL: %3d" % self.total
+        print("\nTOTAL: %3d" % self.total)
 
 
     # All participants' common moves
@@ -76,9 +76,9 @@ class Dealer(Participant):
     
     def display_hidden_hand(self):
         """Displays dealer's hand with hidden ("hole") card"""
-        print "< %s >" % self.name
-        print "HAND:   Xx  %3s%s" % (self.hand[1][0], self.hand[1][1])
-        print "PTS:     ?  %4d" % self.points[1]
+        print("< %s >" % self.name)
+        print("HAND:   Xx  %3s%s" % (self.hand[1][0], self.hand[1][1]))
+        print("PTS:     ?  %4d" % self.points[1])
 
 
 
