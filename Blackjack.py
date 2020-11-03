@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# Blackjack
 
 from main import main_game
 
 
 print("Welcome to the game of blackjack!")
 
-
 while True:  # Always rebound to the menu
-
     print("")
     entry = input("New game[1]  Instructions[2]  Quit[Q]: ")
 

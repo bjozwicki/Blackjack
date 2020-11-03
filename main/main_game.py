@@ -3,6 +3,7 @@
 
 from assets import assets
 from classes.classes import Player, Dealer
+import deck, results
 
 from functools import partial
 from random import randint
@@ -12,43 +13,6 @@ from random import randint
 deck_copies = 1
 human_player = True
 human_player_name = "Miey"
-
-
-def new_deck(deck_copies=1):
-    """Returns a new, sorted deck [type = list] consisting of n-copies of 52-card deck"""
-    deck = []
-
-    for deck_copy in range(deck_copies):
-        for i in range(0, 52):
-            rank_id = i // 4
-            suit_id = i % 4
-            deck.append((assets.rank[rank_id], assets.suit[suit_id]))
-
-    return deck
-
-
-def winner(player, dealer):
-    """Prints in a console result of a game and returns winner (type = str)"""
-    if player.total > 21:
-        print("Player busted. Dealer won.")
-        return "dealer"
-    elif dealer.total > 21:
-        print("Dealer busted. Player won.")
-        return "player"
-
-    elif dealer.total == 21 and len(dealer.hand) == 2:
-        print("Blackjack. Dealer won.")
-        return "dealer"
-    elif player.total == 21 and len(player.hand) == 2:
-        print("Blackjack. Player won.")
-        return "player"
-
-    elif dealer.total >= player.total:
-        print("Player didn't get more points than dealer. Dealer won.")
-        return "dealer"
-    elif dealer.total < player.total:
-        print("Player got more points than dealer. Player won.")
-        return "player"
 
 
 def game():
@@ -62,7 +26,7 @@ def game():
         player_1 = Player(assets.player_names[randint(0, len(assets.player_names) - 1)])
 
     print("_" * 40)
-    deck = new_deck(deck_copies)
+    deck = deck.new_deck(deck_copies)
     dealer.draw_card(deck, 2)
     dealer.count_points()
     dealer.display_hidden_hand()
@@ -100,7 +64,7 @@ def game():
     """3rd stage, calculating and displaying results"""
     print("\n" + "_" * 25 + "RESULTS:" + "_" * 25)
     player_1.display_hand()
-    winner(player_1, dealer)
+    results.winner(player_1, dealer)
 
     dealer.display_hand()
 
